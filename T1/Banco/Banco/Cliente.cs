@@ -21,11 +21,8 @@ namespace Banco {
             this.endereco = endereco;
         }
 
-        public Cliente(int idade, string cpf, string rg, string endereco) {
-            this.idade = idade;
-            this.cpf = cpf;
-            this.rg = rg;
-            this.endereco = endereco;
+        public Cliente(string nome) {
+            this.nome = nome;
         }
 
         public Boolean ehMaiorDeIdade() {

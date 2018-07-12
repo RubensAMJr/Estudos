@@ -17,14 +17,15 @@ namespace Banco {
             this.numero = numero;
         }
 
-        
+        public Conta() {
+        }
 
         public void saca(double valor) {
 
-            if (titular.ehMaiorDeIdade()) {
+            
                   this.saldo -= valor;
 
-            }
+            
         }
 
         public virtual void deposita(double valor) {
