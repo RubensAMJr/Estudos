@@ -5,13 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Banco {
+
+
+
+
     public class Conta {
 
         private double saldo;
-        private Cliente cliente;
-        private int numero;
-        public double Saldo { get; set; }
-        public Cliente Titular { get; set; }          
+        
+        public double Saldo {
+            get {
+                return saldo;
+
+            }
+            set {
+                this.saldo = value;
+
+            }
+
+        }
+        public Cliente Titular { get; set; }
         public int Numero { get; set; }
 
         public Conta(double saldo, Cliente titular, int numero) {
@@ -25,22 +38,22 @@ namespace Banco {
 
         public void saca(double valor) {
 
-            
-                  this.saldo -= valor;
 
-            
+            this.saldo -= valor;
+
+
         }
 
         public virtual void deposita(double valor) {
             this.saldo += valor;
         }
 
-        public void transfere(double valor , Conta recebe) {
+        public void transfere(double valor, Conta recebe) {
             this.saca(valor);
             recebe.deposita(valor);
         }
 
-       
+
 
 
 

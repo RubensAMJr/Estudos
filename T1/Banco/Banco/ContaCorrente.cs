@@ -8,7 +8,7 @@ namespace Banco {
     class ContaCorrente :Conta {
 
 
-        public ContaCorrente(double saldo, Cliente titular, int numero) : base(saldo, titular, numero) {
+        public ContaCorrente() : base() {
 
         }
 

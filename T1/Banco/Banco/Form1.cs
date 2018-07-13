@@ -33,23 +33,25 @@ namespace Banco {
             Cliente cl3 = new Cliente("Emily");
 
             contas[0] = new Conta();
-            contas[0].titular = cl;
-            contas[0].saldo = 20000000.0;
-            contas[0].numero = 1;
+            contas[0].Titular = cl;
+            contas[0].Saldo = 20000000.0;
+            contas[0].Numero = 1;
 
             contas[1] = new Conta();
-            contas[1].titular = cl2;
-            contas[1].saldo = 20000000.0;
-            contas[1].numero = 2;
+            contas[1].Titular = cl2;
+            contas[1].Saldo = 20000000.0;
+            contas[1].Numero = 2;
 
             contas[2] = new Conta();
-            contas[2].titular = cl3;
-            contas[2].saldo = 0;
-            contas[2].numero = 3;
+            contas[2].Titular = cl3;
+            contas[2].Saldo = 0;
+            contas[2].Numero = 3;
+
+            
 
             for (int i = 0; i < contas.Length; i++) {
-                comboContas.Items.Add(contas[i].titular.nome);
-                comboTransfere.Items.Add(contas[i].titular.nome);
+                comboContas.Items.Add(contas[i].Titular.nome);
+                comboTransfere.Items.Add(contas[i].Titular.nome);
 
             }
 
@@ -65,15 +67,15 @@ namespace Banco {
 
         private void btnDeposita_Click(object sender, EventArgs e) {
             double valor = (Convert.ToDouble(txtSaldo.Text)+Convert.ToDouble(txtValor.Text));
-            contas[comboContas.SelectedIndex].saldo = valor;
+            contas[comboContas.SelectedIndex].Saldo = valor;
             txtSaldo.Text = Convert.ToString(valor);
         }
 
         private void button1_Click(object sender, EventArgs e) {
             double valor = (Convert.ToDouble(txtSaldo.Text) - Convert.ToDouble(txtSaque.Text));
-            contas[comboContas.SelectedIndex].saldo = valor;
+            contas[comboContas.SelectedIndex].Saldo = valor;
 
-            txtSaldo.Text = Convert.ToString(contas[comboContas.SelectedIndex].saldo);
+            txtSaldo.Text = Convert.ToString(contas[comboContas.SelectedIndex].Saldo);
 
         }
 
@@ -82,9 +84,9 @@ namespace Banco {
             int indc = comboContas.SelectedIndex;
             Conta cntAtual = contas[indc];
 
-            txtTitular.Text = cntAtual.titular.nome;
-            txtSaldo.Text = Convert.ToString(cntAtual.saldo);
-            txtNumero.Text = Convert.ToString(cntAtual.numero);
+            txtTitular.Text = cntAtual.Titular.nome;
+            txtSaldo.Text = Convert.ToString(cntAtual.Saldo);
+            txtNumero.Text = Convert.ToString(cntAtual.Numero);
 
                 
 
@@ -100,9 +102,9 @@ namespace Banco {
             int indc = comboContas.SelectedIndex;
             Conta cntAtual = contas[indc];
 
-            txtTitular.Text = cntAtual.titular.nome;
-            txtSaldo.Text = Convert.ToString(cntAtual.saldo);
-            txtNumero.Text = Convert.ToString(cntAtual.numero);
+            txtTitular.Text = cntAtual.Titular.nome;
+            txtSaldo.Text = Convert.ToString(cntAtual.Saldo);
+            txtNumero.Text = Convert.ToString(cntAtual.Numero);
 
 
 
