@@ -8,14 +8,14 @@ namespace Banco {
     class Banco {
 
         public Conta[] contas = new Conta[10];
-        public int indice = 0;
+        public int Indice = 0;
 
 
         public void Adiciona(Conta conta) {
 
 
-            contas[indice] = conta;
-            indice++;
+            contas[Indice] = conta;
+            Indice++;
         }
     }
 }

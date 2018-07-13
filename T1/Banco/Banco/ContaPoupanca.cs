@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Banco {
-    public class ContaPoupanca : Conta {
+    public class ContaPoupanca : Conta , ITributavel{
 
         
 
@@ -15,10 +15,12 @@ namespace Banco {
 
         }
 
-        
+        public double calculaTributo() {
+            return this.Saldo * 0.02;
+        }
 
         public override void deposita(double valor) {
-            this.saldo += valor + 0.1;
+            this.Saldo += valor + 0.1;
         }
     }
 }

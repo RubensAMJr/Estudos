@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 namespace Banco {
     public class Conta {
 
-        public double saldo { get; set; }
-        public Cliente titular { get; set; }          
-        public int numero { get; set; }
+        private double saldo;
+        private Cliente cliente;
+        private int numero;
+        public double Saldo { get; set; }
+        public Cliente Titular { get; set; }          
+        public int Numero { get; set; }
 
         public Conta(double saldo, Cliente titular, int numero) {
-            this.saldo = saldo;
-            this.titular = titular;
-            this.numero = numero;
+            this.Saldo = saldo;
+            this.Titular = titular;
+            this.Numero = numero;
         }
 
         public Conta() {
