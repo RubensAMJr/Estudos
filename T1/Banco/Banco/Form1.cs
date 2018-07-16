@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Banco {
     public partial class Form1 : Form {
-        Conta[] contas;
+        List<Conta> contas;
         private int quantidadeContas;
         public Form1() {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Banco {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            contas = new Conta[100];
+            contas = new List<Conta>();
             
 
 
@@ -87,8 +87,9 @@ namespace Banco {
         }
 
         public void AdicionaConta(Conta conta) {
-            this.contas[this.quantidadeContas] = conta;
-            this.quantidadeContas++;
+            this.contas.Add(conta);
+
+            
 
             comboContas.Items.Add(conta.Titular.nome);
             comboTransfere.Items.Add(conta.Titular.nome);
