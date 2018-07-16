@@ -9,7 +9,7 @@ namespace Banco {
         public double Total { get; private set; }
 
         public void Acidiona(Conta conta) {
-            this.Total += conta.saldo;
+            this.Total += conta.Saldo;
         }
 
         

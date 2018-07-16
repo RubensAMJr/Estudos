@@ -11,6 +11,7 @@ using System.Windows.Forms;
 namespace Banco {
     public partial class Form1 : Form {
         Conta[] contas;
+        private int quantidadeContas;
         public Form1() {
             InitializeComponent();
         }
@@ -27,34 +28,8 @@ namespace Banco {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            contas = new Conta[3];
-            Cliente cl = new Cliente("Barbara");
-            Cliente cl2 = new Cliente("Josemilton");
-            Cliente cl3 = new Cliente("Emily");
-
-            contas[0] = new Conta();
-            contas[0].Titular = cl;
-            contas[0].Saldo = 20000000.0;
-            contas[0].Numero = 1;
-
-            contas[1] = new Conta();
-            contas[1].Titular = cl2;
-            contas[1].Saldo = 20000000.0;
-            contas[1].Numero = 2;
-
-            contas[2] = new Conta();
-            contas[2].Titular = cl3;
-            contas[2].Saldo = 0;
-            contas[2].Numero = 3;
-
+            contas = new Conta[100];
             
-
-            for (int i = 0; i < contas.Length; i++) {
-                comboContas.Items.Add(contas[i].Titular.nome);
-                comboTransfere.Items.Add(contas[i].Titular.nome);
-
-            }
-
 
 
 
@@ -109,6 +84,23 @@ namespace Banco {
 
 
 
+        }
+
+        public void AdicionaConta(Conta conta) {
+            this.contas[this.quantidadeContas] = conta;
+            this.quantidadeContas++;
+
+            comboContas.Items.Add(conta.Titular.nome);
+            comboTransfere.Items.Add(conta.Titular.nome);
+        }
+
+        private void cadastroConta_Click(object sender, EventArgs e) {
+            CadastroDeConta cadastro = new CadastroDeConta(this);
+            cadastro.ShowDialog();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e) {
+            
         }
     }
 }

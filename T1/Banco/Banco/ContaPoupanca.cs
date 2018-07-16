@@ -11,7 +11,7 @@ namespace Banco {
 
         
 
-        public ContaPoupanca(double saldo, Cliente titular, int numero) : base(saldo,titular,numero){
+        public ContaPoupanca() : base(){
 
         }
 
