@@ -17,31 +17,27 @@ namespace Editor {
 
         private void Form1_Load(object sender, EventArgs e) {
             if (File.Exists("entrada.txt")) {
-                Stream entrada = File.Open("entrada.txt", FileMode.Open);
-                StreamReader leitor = new StreamReader(entrada);
+                using (Stream entrada = File.Open("entrada.txt", FileMode.Open))
+                using (StreamReader leitor = new StreamReader(entrada)) {
 
-                string linha = leitor.ReadToEnd();
-                texto.Text += linha;
-
-
-
-                //while (linha != null) {
-                //    texto.Text += linha;
-                 //   linha = leitor.ReadLine();
-                 //
-                //}
-                leitor.Close();
-                entrada.Close();
+                    string linha = leitor.ReadToEnd();
+                    texto.Text += linha;
+                }
             }
         }
 
-        private void button1_Click(object sender, EventArgs e) {
-            Stream saida = File.Open("entrada.txt", FileMode.Create);
-            StreamWriter escritor = new StreamWriter(saida);
-            escritor.Write(texto.Text);
 
-            escritor.Close();
-            saida.Close();
+
+               
+               
+
+        private void button1_Click(object sender, EventArgs e) {
+            using (Stream saida = File.Open("entrada.txt", FileMode.Create))
+                using(StreamWriter escritor = new StreamWriter(saida)) {
+                  escritor.Write(texto.Text);
+
+            
+           }
         }
     }
 }
