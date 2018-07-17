@@ -29,6 +29,10 @@ namespace Banco {
 
         private void Form1_Load(object sender, EventArgs e) {
             contas = new List<Conta>();
+
+            var menor = from c in contas
+                        where c.Saldo > 5000
+                        select c;
             
 
 
