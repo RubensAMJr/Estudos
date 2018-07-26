@@ -11,6 +11,8 @@ namespace Alura.Loja.Testes.ConsoleApp
 
         public IList<PromocaoProduto> Promocoes { get; set; }
 
+        public IList<Compra> Compras { get; set; }
+
         public string Unidade { get; set; }
 
 
