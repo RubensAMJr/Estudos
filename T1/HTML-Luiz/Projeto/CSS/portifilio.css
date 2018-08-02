@@ -1,0 +1,31 @@
+figure{
+    
+    text-align: center;
+}
+.bmw{
+    background-color: white;
+    border: 8px solid black;
+    float: left;
+    width: 45%;
+   
+}.uol{
+    background-color: white;
+    border: 8px solid black;
+    width: 45%;
+    float: right;
+}.ibm{
+    background-color: white;
+    border: 8px solid black;
+    width: 45%;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    left 500px;    
+
+}.g1{
+   background-color: white;
+    border: 8px solid black;
+    margin-top: 10px;
+   width: 45%;
+    float: right;
+}

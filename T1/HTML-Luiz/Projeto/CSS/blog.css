@@ -1,0 +1,21 @@
+article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    clear: both;
+}.leia-mais{
+    padding: 8px;
+    margin: 16px;
+    display: block;
+    font-size: 24px;
+    
+    background-color: #E6E7E8;
+    
+}.um{
+    float:left;
+    clear: right;
+   
+}.dois{
+    float:right;
+    clear: both;
+}
