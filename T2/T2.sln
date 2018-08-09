@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoDesignPatterns", "CursoDesignPatterns\CursoDesignPatterns.csproj", "{C17F9DFD-3897-4F22-B6D0-09F721DF6885}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoDesignPatterns", "CursoDesignPatterns\CursoDesignPatterns.csproj", "{A6AFEECD-9007-4774-8932-8D16B656430F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C17F9DFD-3897-4F22-B6D0-09F721DF6885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C17F9DFD-3897-4F22-B6D0-09F721DF6885}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C17F9DFD-3897-4F22-B6D0-09F721DF6885}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C17F9DFD-3897-4F22-B6D0-09F721DF6885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6AFEECD-9007-4774-8932-8D16B656430F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6AFEECD-9007-4774-8932-8D16B656430F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6AFEECD-9007-4774-8932-8D16B656430F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6AFEECD-9007-4774-8932-8D16B656430F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
