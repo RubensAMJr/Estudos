@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace CursoDesignPatterns.CalcImposto {
     public class NotaFiscal {
 
-        private String RazaoSocial { get; set; }
+        public String RazaoSocial { get; set; }
         private String Cnpj { get; set; }
         private DateTime DataDeEmissao { get;  set; }
-        private double ValorBruto { get;  set; }
+        public double ValorBruto { get;  set; }
         private double Impostos { get;  set; }
         public IList<ItemDaNota> Itens { get; private set; }
         public String Observacoes { get; private set; }
