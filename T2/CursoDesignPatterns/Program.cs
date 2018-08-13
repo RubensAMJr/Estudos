@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace CursoDesignPatterns {
     class Program {
         static void Main(string[] args) {
-            IImposto iss = new ISS();
-            IImposto icms = new ICMS();
+            Imposto iss = new ISS();
+            Imposto icms = new ICMS();
             Orcamento orcamento = new Orcamento(500.0);
             CalculadorDeImpostos calculador = new CalculadorDeImpostos();
 

@@ -9,7 +9,7 @@ namespace CursoDesignPatterns {
 
 
        
-        public  void RealizaCalculo(Orcamento orcamento , IImposto imposto) {
+        public  void RealizaCalculo(Orcamento orcamento , Imposto imposto) {
             double iss = imposto.Calcula(orcamento);
             Console.WriteLine(iss);
         }
