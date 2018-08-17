@@ -42,11 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalcImposto\AcaoAposGerarNota.cs" />
     <Compile Include="CalcImposto\Aprovado.cs" />
     <Compile Include="CalcImposto\CalculadorDeDescontos.cs" />
     <Compile Include="CalcImposto\CalculadorDeImpostos.cs" />
     <Compile Include="CalcImposto\Complexo.cs" />
-    <Compile Include="CalcImposto\CriadorDeNotaFiscal.cs" />
+    <Compile Include="CalcImposto\EnviadorDeEmail.cs" />
+    <Compile Include="CalcImposto\EnviaPorSMS.cs" />
+    <Compile Include="CalcImposto\ItemDaNotaBuilder.cs" />
+    <Compile Include="CalcImposto\Multiplicador.cs" />
+    <Compile Include="CalcImposto\NotaFiscalBuilder.cs" />
     <Compile Include="CalcImposto\DescontoPorCincoItens.cs" />
     <Compile Include="CalcImposto\DescontoPorMaisDeQuinhentos.cs" />
     <Compile Include="CalcImposto\EmAprovacao.cs" />
@@ -61,6 +66,7 @@
     <Compile Include="CalcImposto\Item.cs" />
     <Compile Include="CalcImposto\ItemDaNota.cs" />
     <Compile Include="CalcImposto\NotaFiscal.cs" />
+    <Compile Include="CalcImposto\NotaFiscalDAO.cs" />
     <Compile Include="CalcImposto\Relatorio.cs" />
     <Compile Include="CalcImposto\Reprovado.cs" />
     <Compile Include="CalcImposto\Simples.cs" />
