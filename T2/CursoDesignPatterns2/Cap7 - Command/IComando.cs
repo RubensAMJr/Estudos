@@ -5,10 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CursoDesignPatterns2.Cap7 {
-    class FilaDeTrabalho {
+    interface IComando {
 
-        private IList<IComando> Pedidos = new List<IComando>();
-
-        
+        void Executa();
     }
 }

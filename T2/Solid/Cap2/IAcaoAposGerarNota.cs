@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CursoDesignPatterns2.Cap7 {
-    interface IComando {
+namespace Solid
+{
+    public interface IAcaoAposGerarNota
+    {
+        void Executa(NotaFiscal nf);
     }
 }
